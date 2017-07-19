@@ -1,0 +1,28 @@
+a {
+  display: block;
+}
+.left {
+  float: left;
+}
+.right{
+  float: right;
+  margin-right: 243px;
+}
+
+body{
+  font-family: "tahoma";
+}
+
+img {
+  max-height: 700px;
+}
+.stuck{
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: beige;
+}
+
+.modal-container{
+  display: none;
+}
