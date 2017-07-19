@@ -1,9 +1,11 @@
 a {
   display: block;
 }
+
 .left {
   float: left;
 }
+
 .right{
   float: right;
   margin-right: 243px;
@@ -16,6 +18,7 @@ body{
 img {
   max-height: 700px;
 }
+
 .stuck{
   position: fixed;
   top: 0;
@@ -25,4 +28,67 @@ img {
 
 .modal-container{
   display: none;
+  display: -ms-flexbox;
+ display: flex;
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ overflow: auto;
+ background-color: rgba(0,0,0,0.4);
+ display: none;
+ z-index: 1;
+ background-color: rgba(0,0,0,0.4);
+
+}
+.modal-content{
+  padding: 20px;
+-webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+left: 50%;
+top: 50%;
+position: absolute;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-direction: column;
+  flex-direction: column;
+-ms-flex-pack: center;
+  justify-content: center;
+background-color: #fdf5e6;
+padding: 20px;
+border: 5px solid #ce2d65;
+border-radius: 58px;
+width: 80%;
+height: 80%;
+}
+
+.close-button{
+  position: absolute;
+ top: 5%;
+ right: 5%;
+ padding: 10px;
+ color: red;
+ cursor: pointer;
+ font-family: 'Josefin Sans', sans-serif;
+ width: 5%;
+ font-size: 23px;
+ font-weight: bold;
+ margin: 5px 30px;
+ background-color: #ce2d65;
+ border: 3px solid orange;
+ border-radius: 20px;
+ color: OldLace;
+ -webkit-box-shadow: 2px 2px 1px #888888;
+         box-shadow: 2px 2px 1px #888888;
+ text-align: center;
+}
+
+#Portfolio{
+  cursor: pointer;
+}
+
+#iframe{
+  min-height: 70%;
 }
